@@ -9,7 +9,7 @@ function rollDice() {
   for (let i = 0; i < diceCount; i++) {
     const roll = Math.floor(Math.random() * 6) + 1;
     const img = document.createElement("img");
-    img.src = `images/dice${roll}.png`; // Local file instead of remote
+    img.src = `images/dice${roll}.png`; 
     img.alt = `Dice showing ${roll}`;
     img.classList.add("dice");
     diceContainer.appendChild(img);
