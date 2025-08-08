@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #ff4081;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #e73370;
+}
+
+#diceContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dice {
+  width: 60px;
+  height: 60px;
+  animation: roll 0.5s ease;
+}
+
+@keyframes roll {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
